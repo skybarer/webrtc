@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/root.css" />
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    </head>
+
+    <body class="a3-login">
+
+        <div id="loginPage" class="container clearfix width-full w3-center">
+            <div id="js-pjax-container" data-pjax-container="">
+                <div class="auth-form px-3" id="login">
+                    <div class="auth-form-header p-0">
+                        <h1> Video Sign In</h1>
+                    </div>
+                    <div class="auth-form-body mt-3">
+                        <label for="usernameInput" class="auth-form label"> Username</label>
+                        <input autocapitalize="off" autocorrect="off" class="form-control input-block"
+                            id="usernameInput" name="login" tabindex="1" type="text" value="">
+                        </label>
+                        <button class="btn btn-primary btn-block" tabindex="3" type="submit" id="loginBtn">Enter
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="callPage" class="call-page">
+            <div id="videos" class="row text-center">
+
+                <video id="mini-video" autoplay playsinline muted></video>
+                <video id="remote-video" autoplay playsinline></video>
+                <video id="local-video" autoplay playsinline muted></video>
+
+                <video id="localVideo" autoplay playsinline muted></video>
+                <video id="remoteVideo" autoplay></video>
+            </div>
+
+            <div id="inputPage" class="row text-center">
+                <div class="col-md-12">
+                    <input id="callToUsernameInput" type="text" class="form-control" placeholder="username to call" />
+                    <br>
+                    <button id="callBtn" class="btn-success btn">
+                        &nbsp;&nbsp;&nbsp;&nbsp; Call &nbsp;&nbsp;&nbsp;&nbsp;
+                    </button>
+                    <button id="hangUpBtn" class="btn-danger btn">Hang Up</button>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/client.js"></script>
+
+    </body>
+
+</html>
